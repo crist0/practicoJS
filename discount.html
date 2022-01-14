@@ -11,7 +11,23 @@
     <header>
       <h1>Percentages and discounts</h1>
     </header>
-    <section></section>
+    <section>
+      <h2>Calculate the price to pay with discount</h2>
+      <form>
+        <div>
+          <label for="priceInput">Write the price of you product</label>
+          <input id="priceInput" type="number" />
+        </div>
+        <div>
+          <label for="couponInput">Write the coupon</label>
+          <input id="couponInput" type="text" />
+        </div>
+        <div>
+          <button type="button" onclick="priceWithDiscount()">Calculate price with discount</button>
+        </div>
+        <p id="priceWithDiscount"></p>
+      </form>
+    </section>
     <footer>
       <p>Made by <a href="https://crist0.com" target="_blank">crist0</a></p>
       <h4><a href="./index.html">Back to JavaScript Projects</a></h4>
