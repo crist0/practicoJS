@@ -15,7 +15,7 @@ function isPar(num){
 function medianSalary(list){
   const mediumList = parseInt(list.length / 2);
 
-  if(isPar(list.lenght)){
+  if(isPar(list.length)){
     const personMedium1 = list[mediumList -1];
     const personMedium2 = list[mediumList];
     return calculateAverage([personMedium1,personMedium2]);
