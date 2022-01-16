@@ -79,3 +79,7 @@ colombia.push({
   name: "Bill Gates",
   salary: 100000000,
 });
+const listSalary = document.getElementById("listSalary");
+for(i=0;i<colombia.length;i++){
+  listSalary.innerHTML += colombia[i].name+" "+colombia[i].salary+"<br>";
+}

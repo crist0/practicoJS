@@ -35,3 +35,21 @@ function calculateMedian(list) {
   }
   return median;
 }
+
+function calculateMedianList(){
+  const inputList = document.getElementById("inputList");
+  const valueList = inputList.value;
+
+  let list = valueList.split(',');
+
+  list = list.map(
+    function(a,b){
+      return parseInt(a);
+    }
+  );
+
+  const averageList = calculateMedian(list);
+
+  const resultA = document.getElementById("resultA");
+  resultA.innerHTML = "List: "+averageList;
+}

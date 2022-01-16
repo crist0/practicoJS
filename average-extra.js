@@ -12,3 +12,21 @@ function calculateAverageExtra(list){
   const averageList = list.length/sumList;
   return averageList;
 }
+
+function calculateAverageExtraList(){
+  const inputList = document.getElementById("inputList");
+  const valueList = inputList.value;
+
+  let list = valueList.split(',');
+
+  list = list.map(
+    function(a,b){
+      return parseInt(a);
+    }
+  );
+
+  const averageList = calculateAverageExtra(list);
+
+  const resultA = document.getElementById("resultA");
+  resultA.innerHTML = "List: "+averageList;
+}

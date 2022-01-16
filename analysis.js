@@ -51,3 +51,6 @@ console.log({
   medianGeneralCol,
   medianTop10Col,
 });
+const analysisSalary = document.getElementById("analysisSalary");
+analysisSalary.innerHTML += "Mediana general de la lista: "+medianGeneralCol+"<br>";
+analysisSalary.innerHTML += "Mediana general de la lista Top 10: "+medianTop10Col+"<br>";

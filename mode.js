@@ -20,3 +20,23 @@ function calculateMode(list){
   return mode;
 }
 
+function calculateModeList(){
+  const inputList = document.getElementById("inputList");
+  const valueList = inputList.value;
+
+  let list = valueList.split(',');
+
+  list = list.map(
+    function(a,b){
+      return parseInt(a);
+    }
+  );
+
+  const averageList = calculateMode(list);
+
+  const resultA = document.getElementById("resultA");
+  resultA.innerHTML = averageList[0];
+  resultA.innerHTML += " : ";
+  resultA.innerHTML += averageList[1];
+  resultA.innerHTML += " times.";
+}
